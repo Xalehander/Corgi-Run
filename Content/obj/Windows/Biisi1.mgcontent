@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>C:/Users/Aleksi/Desktop/New folder/Corgi-Run/Corgi-Run/Content/Biisi1.mp3</SourceFile>
+  <SourceTime>2019-04-10T16:24:22.0481026+03:00</SourceTime>
+  <DestFile>C:/Users/Aleksi/Desktop/New folder/Corgi-Run/Corgi-Run/Content/bin/Windows/Biisi1.xnb</DestFile>
+  <DestTime>2019-04-10T16:29:59.0943805+03:00</DestTime>
+  <Importer>Mp3Importer</Importer>
+  <ImporterTime>2018-12-08T18:35:54+02:00</ImporterTime>
+  <Processor>SongProcessor</Processor>
+  <ProcessorTime>2018-12-08T18:35:54+02:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput>
+    <string>C:/Users/Aleksi/Desktop/New folder/Corgi-Run/Corgi-Run/Content/bin/Windows/Biisi1.wma</string>
+  </BuildOutput>
+</PipelineBuildEvent>

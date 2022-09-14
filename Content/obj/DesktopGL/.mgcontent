@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/Aleksi/Desktop/New folder/Corgi-Run/Corgi-Run/Content/Kentta1.png</File>
+    <File>C:/Users/Aleksi/Desktop/New folder/Corgi-Run/Corgi-Run/Content/Biisi1.mp3</File>
+    <File>C:/Users/Aleksi/Desktop/New folder/Corgi-Run/Corgi-Run/Content/Kentta0.png</File>
+    <File>C:/Users/Aleksi/Desktop/New folder/Corgi-Run/Corgi-Run/Content/Kentta2.png</File>
+    <File>C:/Users/Aleksi/Desktop/New folder/Corgi-Run/Corgi-Run/Content/Kentta3.png</File>
+    <File>C:/Users/Aleksi/Desktop/New folder/Corgi-Run/Corgi-Run/Content/Piano.mp3</File>
+    <File>C:/Users/Aleksi/Desktop/New folder/Corgi-Run/Corgi-Run/Content/Profiili.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>
