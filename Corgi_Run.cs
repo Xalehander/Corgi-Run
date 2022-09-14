@@ -363,7 +363,7 @@ using Jypeli.Widgets;
         {
             if (ronja == true)
             {
-                vektori = vektori * 1.5;
+                vektori = vektori * 1.2;
             }
             suuntaOikea = true; //Pelaajan suunta on nyt vasen, tämä on visuaaliseen tarkoitukseen + ns. dashiin, että pelaaja dashaa oikeaan suuntaan.
             pelaaja.Push(vektori);
@@ -388,7 +388,7 @@ using Jypeli.Widgets;
         {
             if (ronja == true)
             {
-                suunta = suunta * 1.5;
+                suunta = suunta * 1.2;
             }
         int hyppyStamina = 40; //Voidaan määrittää hypyn vaativuus, 40 koska default latausnopeus 30 per sekunti, eli 1,4s välein voi hypätä uudelleen jos staminat vähissä
             if (voiHypata == true && pelaajaStamina.Value > hyppyStamina) //Tämä varmistaa että pelaaja ei ole jo hypännyt ja että pelaajalla on tarpeeksi puhtia hyppyyn
