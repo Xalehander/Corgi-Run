@@ -1,0 +1,11 @@
+[ ] Rakenna uudestaan pelattava hahmo
+	[ ] Corgery - magic system
+	[ ] Pelaajalle invisysteemi
+	[ ] Pelaajalle skillisysteemi
+[ ] Rakenna vihut uudestaan
+	[ ] Ylläolevaan pohjaan bossit
+[ ] Kenttägenerointi uusiksi
+[ ] Menut uusiksi
+	[ ] Käyttöliittymä
+	[ ] Klikattavat menut
+[ ] Kentät olioiksi

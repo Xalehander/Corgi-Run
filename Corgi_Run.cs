@@ -5,12 +5,41 @@ using Jypeli.Assets;
 using Jypeli.Controls;
 using Jypeli.Widgets;
 
-    /// @author Aleksi Joutsen
-    /// @version 1.0
-    /// <summary>
-    /// Peli
-    /// </summary>
-    public class Corgi_Run : PhysicsGame
+class Corgi : PhysicsObject
+{
+    private int defaultHP = 100;
+    private int defaultMP = 100;
+    private int defaultST = 100;
+    private int MaxHP;
+    private int MaxMP;
+    private int MaxST;
+    private int curHP;
+    private int curMP;
+    private int curST;
+    private int lvl;
+    private int Maxlvl;
+    private int Exp;
+    private string nimi;
+    //private Corgery[]; 
+
+
+    public Corgi(double lev, double kor) : base(lev, kor)
+    {
+        Restitution = 0.30;
+        KineticFriction = 0.95;
+        Mass = 1.0;
+        CanRotate = false;
+        Shape = Shape.Circle;
+        Color = Color.Orange;
+    }
+}
+
+/// @author Aleksi Joutsen
+/// @version 1.0
+/// <summary>
+/// Peli
+/// </summary>
+public class Corgi_Run : PhysicsGame
     {
         private PhysicsObject pelaaja; //Pelaajan fysiikkaolio
         private PhysicsObject isoVihu; //Kentän bossin fysiikkaolio
@@ -65,6 +94,8 @@ using Jypeli.Widgets;
             AlustaMuuttujat();
             LuoAlkuValikko();
         }
+
+
 
         /// <summary>
         /// Luo kentän käyttämällä SetTileMethodia eli muuttaa pikselitaiteen olioiksi. Nollaa "maalin" tilanteen eli bossiin ei voi mennä ennen kuin 10 nappulaa kerätty.
