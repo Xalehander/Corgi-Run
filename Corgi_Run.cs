@@ -13,11 +13,14 @@ class Corgi : PhysicsObject
     private int HP;
     private int MP;
     private int ST;
+    private int Atk = 10;
+    private int Def = 10;
     private int lvl = 1;
     private int Maxlvl = 100;
-    private int Exp;
+    private int Exp = 0;
     private string nimi;
     private double nopeus = 1.0;
+    private bool init;
     //private Corgery[]; 
 
 
@@ -31,12 +34,42 @@ class Corgi : PhysicsObject
         Color = Color.Orange;
     }
 
-    public Corgi Ella(double koko, int stat, double mod)
+    public Corgi Ella(double koko, int stat)
     {
-        Corgi ella = new Corgi(koko, koko);
+        Corgi corgi = new Corgi(koko, koko);
         nimi = "Ella";
+        if(init == false)
+        {
+            MaxHP = (int)(stat * 1.5);
+            MaxMP = stat;
+            MaxST = stat;
+            HP = MaxHP;
+            MP = MaxMP;
+            ST = MaxST;
+            Def = 15;
+        }
 
-        return ella;
+        init = true;
+        return corgi;
+    }
+
+    public Corgi Ronja(double koko, int stat)
+    {
+        Corgi corgi = new Corgi(koko, koko);
+        nimi = "Ronja";
+        if (init == false)
+        {
+            MaxHP = (int)(stat * 1.5);
+            MaxMP = stat;
+            MaxST = stat;
+            HP = MaxHP;
+            MP = MaxMP;
+            ST = MaxST;
+            nopeus = 1.2;
+        }
+
+        init = true;
+        return corgi;
     }
 }
 
@@ -62,7 +95,6 @@ public class Corgi_Run : PhysicsGame
         private const int maxMP = 1000;   //ylempi mutta MP
         private const int maxStamina = 1500; //Ylempi mutta stamina
     private const int defaultStat = 100;
-    private const double mod = 1.5;
         private double leveli = 1; //Pelaajan leveli, tätä käytetään muun muassa stattien kehittämiseen ja damagen kasvattamiseen
         private const int levelMAX = 20; //Pelaajan max level
         private const int kenttiaPelissa = 4; //0 kenttä on ns. salainen kenttä
