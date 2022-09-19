@@ -7,19 +7,17 @@ using Jypeli.Widgets;
 
 class Corgi : PhysicsObject
 {
-    private int defaultHP = 100;
-    private int defaultMP = 100;
-    private int defaultST = 100;
     private int MaxHP;
     private int MaxMP;
     private int MaxST;
-    private int curHP;
-    private int curMP;
-    private int curST;
-    private int lvl;
-    private int Maxlvl;
+    private int HP;
+    private int MP;
+    private int ST;
+    private int lvl = 1;
+    private int Maxlvl = 100;
     private int Exp;
     private string nimi;
+    private double nopeus = 1.0;
     //private Corgery[]; 
 
 
@@ -31,6 +29,14 @@ class Corgi : PhysicsObject
         CanRotate = false;
         Shape = Shape.Circle;
         Color = Color.Orange;
+    }
+
+    public Corgi Ella(double koko, int stat, double mod)
+    {
+        Corgi ella = new Corgi(koko, koko);
+        nimi = "Ella";
+
+        return ella;
     }
 }
 
@@ -52,9 +58,11 @@ public class Corgi_Run : PhysicsGame
         private DoubleMeter edistyminen;//Max 100, -> pääsee kentässä eteenpäin
         private DoubleMeter aikaAjastin; //Paljon on aikaa päästä kenttä läpi
 
-        private const int maxHP = 200;    //Pelaajan HP-katto, tämän yli ei voi mennä
-        private const int maxMP = 100;   //ylempi mutta MP
-        private const int maxStamina = 150; //Ylempi mutta stamina
+        private const int maxHP = 1500;    //Pelaajan HP-katto, tämän yli ei voi mennä
+        private const int maxMP = 1000;   //ylempi mutta MP
+        private const int maxStamina = 1500; //Ylempi mutta stamina
+    private const int defaultStat = 100;
+    private const double mod = 1.5;
         private double leveli = 1; //Pelaajan leveli, tätä käytetään muun muassa stattien kehittämiseen ja damagen kasvattamiseen
         private const int levelMAX = 20; //Pelaajan max level
         private const int kenttiaPelissa = 4; //0 kenttä on ns. salainen kenttä
